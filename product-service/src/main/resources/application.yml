@@ -1,0 +1,18 @@
+server:
+  port: 8590
+
+spring:
+  datasource:
+    username: 'postgres'
+    password: 'root'
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/PMProductDB'
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+myapplication:
+  feign:
+    stock: http://localhost:8591/api/v1

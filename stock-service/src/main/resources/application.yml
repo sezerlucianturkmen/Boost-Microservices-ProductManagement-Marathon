@@ -1,0 +1,15 @@
+server:
+  port: 8591
+
+spring:
+  datasource:
+    username: 'postgres'
+    password: 'root'
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/PMStockDB'
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
